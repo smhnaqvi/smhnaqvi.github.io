@@ -25,7 +25,7 @@
 	<!-- Modern Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 	
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -49,10 +49,14 @@
 			<div class="nav-menu" id="nav-menu">
 				<a href="#home" class="nav-link">Home</a>
 				<a href="#about" class="nav-link">About</a>
-				<a href="#experience" class="nav-link">Experience</a>
 				<a href="#skills" class="nav-link">Skills</a>
-				<a href="#projects" class="nav-link">Projects</a>
+				<a href="#experience" class="nav-link">Experience</a>
+				<a href="#portfolio" class="nav-link">Portfolio</a>
+				<a href="#testimonial" class="nav-link">Testimonial</a>
 				<a href="#contact" class="nav-link">Contact</a>
+			</div>
+			<div class="nav-cta">
+				<a href="#contact" class="btn btn-hire">Hire Me</a>
 			</div>
 			<div class="nav-toggle" id="nav-toggle">
 				<span class="bar"></span>
@@ -69,466 +73,195 @@
 				<div class="shape shape-1"></div>
 				<div class="shape shape-2"></div>
 				<div class="shape shape-3"></div>
-				<div class="shape shape-4"></div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="hero-content">
-				<div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
-					<div class="greeting">
-						<svg class="hand-icon" width="24" height="24" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet">
-							<path d="M5.946 30.785c-2.999 7.189 2.213 15.866 9.784 17.387c-5.9-3.962-9.584-10.327-9.784-17.387" fill="currentColor"></path>
-							<path d="M15.73 48.172l-.184-.039c.023.006.078.015.184.039" fill="currentColor"></path>
-							<path d="M2 44.261c.489 6.02 8.039 9.878 13.457 7.412C9.879 50.475 6.179 49.378 2 44.261" fill="currentColor"></path>
-							<path d="M46.504 22.794c3.512-7.168-1.475-16.036-9.055-17.963c5.799 4.233 9.239 10.824 9.055 17.963" fill="currentColor"></path>
-							<path d="M48.865 17.848c4.192-3.709 2.502-11.088-2.332-13.49c2.33 4.565 3.151 8.421 2.332 13.49" fill="currentColor"></path>
-							<path d="M60.519 14.345a5.43 5.43 0 0 0-3.303-1.116c-7.206 0-8.498 9.386-10.097 13.05c0 0-7.389-15.469-9.959-20.573c-2.65-5.265-8.307-4.177-9.964-1.311C23.26.316 15.823 3.609 16.771 8.568c-5.104-.392-7.167 4.643-6.034 7.871c-3.945-.122-5.789 4.757-4.455 8.25c.069.182 7.073 13.966 8.959 18.662c.219.545.44 1.128.672 1.742c1.525 4.032 3.614 9.554 8.84 13.989C27.003 60.991 30.118 62 33.764 62c6.426 0 13.581-3.189 18.229-8.126c4.163-4.421 6.158-9.848 5.77-15.695c-.348-5.256 1.324-10.208 2.667-14.188c1.457-4.319 2.607-7.731.089-9.646m-5.947 23.66c.813 11.628-10.842 21.439-20.73 21.439c-3.021 0-6.15-.488-8.105-2.147c-5.606-4.758-7.013-10.646-8.638-14.684c-1.941-4.831-6.705-14.114-9.014-18.784c-.945-1.912.634-5.981 3.384-5.981L19.4 34.716l3.005 1.804s-6.882-14.998-9.061-20.167c-1.272-3.018.92-6.662 3.874-6.187l9.846 21.016l3.006 1.808L18.594 8.757c-.046-4.295 5.831-4.362 7.197-1.854c3.457 6.348 9.947 20.279 9.947 20.279l3.004 1.807L27.969 6.146c2.104-2.754 5.816-2.368 7.416.975c1.922 4.015 10.061 21.454 10.061 21.454c-8.035 3.012-13.52 11.743-7.777 20.35c-4.557-9.41 3.516-16.06 8.285-18.258c1.805-.833 2.469-2.408 2.469-2.408l-.004.001c.629-1.139.592-2.662 1.342-5.127c1.625-5.335 3.854-8.162 7.125-8.162c.754 0 1.704.564 2.14 1.207c2.203 3.251-5.21 11.023-4.454 21.827" fill="currentColor"></path>
-						</svg>
-						<span>Hello, I'm</span>
+				<div class="hero-image" data-aos="fade-up" data-aos-duration="1000">
+					<div class="profile-image-container">
+						<div class="profile-image">
+							<img src="images/profile-image.png" alt="Frontend Developer">
+						</div>
+						<div class="video-play-button">
+							<i class="fas fa-play"></i>
+						</div>
 					</div>
+				</div>
+				<div class="hero-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
 					<h1 class="hero-title">
-						<span class="name-highlight">Syed Mohammad Hussain Naqvi</span>
+						<span class="title-gradient">Senior Frontend Developer</span>
 					</h1>
-					<h2 class="hero-subtitle">
-						<span class="typing-text">Senior Frontend Developer</span>
-					</h2>
 					<p class="hero-description">
-						Creating exceptional digital experiences with modern web technologies. 
-						Passionate about building scalable, user-centric applications that drive business success.
+						Crafting beautiful, scalable web experiences using React, JavaScript, and TypeScript.
 					</p>
 					<div class="hero-buttons">
-						<a href="#projects" class="btn btn-primary">
-							<span>View My Work</span>
-							<i class="fas fa-arrow-right"></i>
+						<a href="#contact" class="btn btn-primary">
+							<span>Let's Work Together</span>
 						</a>
-						<a href="#contact" class="btn btn-secondary">
-							<span>Get In Touch</span>
-							<i class="fas fa-envelope"></i>
-						</a>
-					</div>
-					<div class="social-links">
-						<a href="https://github.com/smhnaqvi" target="_blank" class="social-link" data-tooltip="GitHub">
-							<i class="fab fa-github"></i>
-						</a>
-						<a href="https://www.linkedin.com/in/smhnaqvi/" target="_blank" class="social-link" data-tooltip="LinkedIn">
-							<i class="fab fa-linkedin-in"></i>
-						</a>
-						<a href="https://twitter.com/_smhnaqvi" target="_blank" class="social-link" data-tooltip="Twitter">
-							<i class="fab fa-twitter"></i>
-						</a>
-						<a href="https://www.instagram.com/smhn.dev/" target="_blank" class="social-link" data-tooltip="Instagram">
-							<i class="fab fa-instagram"></i>
+						<a href="#" class="btn btn-secondary">
+							<span>Download CV</span>
 						</a>
 					</div>
 				</div>
-				<div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-					<div class="image-container">
-						<div class="profile-image">
-							<img src="images/profile-image.png" alt="Syed Mohammad Hussain Naqvi">
-						</div>
-						<div class="floating-elements">
-							<div class="tech-badge react">
-								<i class="fab fa-react"></i>
-								<span>React</span>
-							</div>
-							<div class="tech-badge nextjs">
-								<i class="fas fa-code"></i>
-								<span>Next.js</span>
-							</div>
-							<div class="tech-badge typescript">
-								<i class="fab fa-js-square"></i>
-								<span>TypeScript</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="scroll-indicator">
-			<div class="scroll-arrow">
-				<i class="fas fa-chevron-down"></i>
 			</div>
 		</div>
 	</section>
 
-	<!-- About Section -->
+	<!-- About Me Section -->
 	<section id="about" class="about">
 		<div class="container">
 			<div class="section-header" data-aos="fade-up">
 				<h2 class="section-title">About Me</h2>
-				<p class="section-subtitle">Get to know me better</p>
 			</div>
-			<div class="about-content">
-				<div class="about-text" data-aos="fade-right" data-aos-duration="800">
-					<div class="about-intro">
-						<h3>Hello There! 
-							<svg class="hand-icon" width="24" height="24" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet">
-								<path d="M5.946 30.785c-2.999 7.189 2.213 15.866 9.784 17.387c-5.9-3.962-9.584-10.327-9.784-17.387" fill="currentColor"></path>
-								<path d="M15.73 48.172l-.184-.039c.023.006.078.015.184.039" fill="currentColor"></path>
-								<path d="M2 44.261c.489 6.02 8.039 9.878 13.457 7.412C9.879 50.475 6.179 49.378 2 44.261" fill="currentColor"></path>
-								<path d="M46.504 22.794c3.512-7.168-1.475-16.036-9.055-17.963c5.799 4.233 9.239 10.824 9.055 17.963" fill="currentColor"></path>
-								<path d="M48.865 17.848c4.192-3.709 2.502-11.088-2.332-13.49c2.33 4.565 3.151 8.421 2.332 13.49" fill="currentColor"></path>
-								<path d="M60.519 14.345a5.43 5.43 0 0 0-3.303-1.116c-7.206 0-8.498 9.386-10.097 13.05c0 0-7.389-15.469-9.959-20.573c-2.65-5.265-8.307-4.177-9.964-1.311C23.26.316 15.823 3.609 16.771 8.568c-5.104-.392-7.167 4.643-6.034 7.871c-3.945-.122-5.789 4.757-4.455 8.25c.069.182 7.073 13.966 8.959 18.662c.219.545.44 1.128.672 1.742c1.525 4.032 3.614 9.554 8.84 13.989C27.003 60.991 30.118 62 33.764 62c6.426 0 13.581-3.189 18.229-8.126c4.163-4.421 6.158-9.848 5.77-15.695c-.348-5.256 1.324-10.208 2.667-14.188c1.457-4.319 2.607-7.731.089-9.646m-5.947 23.66c.813 11.628-10.842 21.439-20.73 21.439c-3.021 0-6.15-.488-8.105-2.147c-5.606-4.758-7.013-10.646-8.638-14.684c-1.941-4.831-6.705-14.114-9.014-18.784c-.945-1.912.634-5.981 3.384-5.981L19.4 34.716l3.005 1.804s-6.882-14.998-9.061-20.167c-1.272-3.018.92-6.662 3.874-6.187l9.846 21.016l3.006 1.808L18.594 8.757c-.046-4.295 5.831-4.362 7.197-1.854c3.457 6.348 9.947 20.279 9.947 20.279l3.004 1.807L27.969 6.146c2.104-2.754 5.816-2.368 7.416.975c1.922 4.015 10.061 21.454 10.061 21.454c-8.035 3.012-13.52 11.743-7.777 20.35c-4.557-9.41 3.516-16.06 8.285-18.258c1.805-.833 2.469-2.408 2.469-2.408l-.004.001c.629-1.139.592-2.662 1.342-5.127c1.625-5.335 3.854-8.162 7.125-8.162c.754 0 1.704.564 2.14 1.207c2.203 3.251-5.21 11.023-4.454 21.827" fill="currentColor"></path>
-							</svg>
-						</h3>
-						<div class="trust-indicator">
-							<i class="fas fa-shield-alt"></i>
-							<span>Trusted by 50+ Clients</span>
+			<div class="about-grid">
+				<div class="about-card" data-aos="fade-up" data-aos-delay="100">
+					<h3>Dynamic Frontend Developer</h3>
+					<p>Passionate about creating engaging and user-friendly web experiences that drive business success and enhance user engagement.</p>
 						</div>
-						<p>I'm a <span class="trust-highlight">Senior Frontend Developer</span> with over 5 years of experience creating scalable, high-performance web applications that enhance user engagement and drive business success.</p>
-						<p>I specialize in modern technologies including <span class="trust-highlight">React.js</span>, <span class="trust-highlight">Next.js</span>, and <span class="trust-highlight">TypeScript</span>, with a strong foundation in backend development using <span class="trust-highlight">PHP</span> and <span class="trust-highlight">Golang</span>.</p>
-						<p>My expertise lies in developing responsive, user-centric interfaces and integrating seamless API functionality, ensuring optimal user experiences across all devices. I'm passionate about UI/UX improvements and leveraging innovative solutions to meet project goals.</p>
-					</div>
-					<div class="about-stats">
-						<div class="stat-item">
-							<div class="stat-number">5+</div>
-							<div class="stat-label">Years Experience</div>
-						</div>
-						<div class="stat-item">
-							<div class="stat-number">50+</div>
-							<div class="stat-label">Projects Completed</div>
-						</div>
-						<div class="stat-item">
-							<div class="stat-number">15+</div>
-							<div class="stat-label">Technologies</div>
-						</div>
-					</div>
+				<div class="about-card" data-aos="fade-up" data-aos-delay="200">
+					<h3>What I Do Best</h3>
+					<ul>
+						<li><i class="fas fa-check"></i> Build responsive websites</li>
+						<li><i class="fas fa-check"></i> Develop interactive UIs</li>
+						<li><i class="fas fa-check"></i> Optimize web performance</li>
+						<li><i class="fas fa-check"></i> Collaborate with teams</li>
+					</ul>
 				</div>
-				<div class="about-info" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
-					<div class="info-card">
-						<h4>Personal Information</h4>
-						<div class="info-list">
-							<div class="info-item">
-								<span class="info-label">Full Name</span>
-								<span class="info-value">Syed Mohammad Hussain Naqvi</span>
-							</div>
-							<div class="info-item">
-								<span class="info-label">Phone</span>
-								<span class="info-value">+92 328 753 8988</span>
-							</div>
-							<div class="info-item">
-								<span class="info-label">Email</span>
-								<span class="info-value">smhnaqvi111@gmail.com</span>
-							</div>
-							<div class="info-item">
-								<span class="info-label">Location</span>
-								<span class="info-value">Lahore, Pakistan</span>
-							</div>
-							<div class="info-item">
-								<span class="info-label">Availability</span>
-								<span class="info-value available">Available for work</span>
-							</div>
-						</div>
+				<div class="about-card" data-aos="fade-up" data-aos-delay="300">
+					<div class="about-icon">
+						<i class="fas fa-map-marker-alt"></i>
 					</div>
+					<h4>Location</h4>
+					<p>Lahore, Pakistan</p>
+				</div>
+				<div class="about-card" data-aos="fade-up" data-aos-delay="400">
+					<div class="about-icon">
+								<i class="fas fa-briefcase"></i>
+					</div>
+					<h4>Experience</h4>
+					<p>5+ Years</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Experience Section -->
-	<section id="experience" class="experience">
-		<div class="container">
-			<div class="section-header" data-aos="fade-up">
-				<h2 class="section-title">Experience & Education</h2>
-				<p class="section-subtitle">My professional journey</p>
-			</div>
-			<div class="timeline-container">
-				<div class="timeline">
-					<!-- Work Experience -->
-					<div class="timeline-section">
-						<h3 class="timeline-section-title" data-aos="fade-up">Work Experience</h3>
-						
-						<div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-							<div class="timeline-marker">
-								<i class="fas fa-briefcase"></i>
-							</div>
-							<div class="timeline-content">
-								<div class="timeline-header">
-									<h4>Senior Frontend Developer</h4>
-									<span class="company">Calibrion AI</span>
-									<span class="duration">Jan 2023 - Present</span>
-								</div>
-								<div class="timeline-body">
-									<ul>
-										<li>Developed reusable UI components using React.js</li>
-										<li>Implemented responsive design principles</li>
-										<li>Collaborated with UX designers and backend developers</li>
-										<li>Integrated RESTful APIs into frontend architecture</li>
-									</ul>
-								</div>
-								<div class="timeline-tech">
-									<span class="tech-tag">React.js</span>
-									<span class="tech-tag">Material UI</span>
-									<span class="tech-tag">TypeScript</span>
-									<span class="tech-tag">RESTful APIs</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-							<div class="timeline-marker">
-								<i class="fas fa-briefcase"></i>
-							</div>
-							<div class="timeline-content">
-								<div class="timeline-header">
-									<h4>Frontend Developer</h4>
-									<span class="company">Philia</span>
-									<span class="duration">Jun 2023 - Present</span>
-								</div>
-								<div class="timeline-body">
-									<ul>
-										<li>Built dual dashboard panels for business and client users</li>
-										<li>Utilized React.js, Material UI, and React Query</li>
-										<li>Developed interactive game components</li>
-										<li>Enhanced overall UI/UX for responsive interface</li>
-									</ul>
-								</div>
-								<div class="timeline-tech">
-									<span class="tech-tag">React.js</span>
-									<span class="tech-tag">Material UI</span>
-									<span class="tech-tag">React Query</span>
-									<span class="tech-tag">Next.js</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-							<div class="timeline-marker">
-								<i class="fas fa-briefcase"></i>
-							</div>
-							<div class="timeline-content">
-								<div class="timeline-header">
-									<h4>Frontend Developer</h4>
-									<span class="company">Limoo Host</span>
-									<span class="duration">Apr 2022 - Present</span>
-								</div>
-								<div class="timeline-body">
-									<ul>
-										<li>Designed campaign websites using HTML5, CSS3, and JavaScript</li>
-										<li>Created custom UI component library</li>
-										<li>Improved developer productivity</li>
-										<li>Implemented responsive, SEO-friendly interfaces</li>
-									</ul>
-								</div>
-								<div class="timeline-tech">
-									<span class="tech-tag">HTML5</span>
-									<span class="tech-tag">CSS3</span>
-									<span class="tech-tag">JavaScript</span>
-									<span class="tech-tag">SEO</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-							<div class="timeline-marker">
-								<i class="fas fa-briefcase"></i>
-							</div>
-							<div class="timeline-content">
-								<div class="timeline-header">
-									<h4>Full-stack Developer</h4>
-									<span class="company">Deviatech</span>
-									<span class="duration">Feb 2019 - Mar 2022</span>
-								</div>
-								<div class="timeline-body">
-									<ul>
-										<li>Developed and maintained multiple web applications</li>
-										<li>Worked across the full stack using PHP, MySQL, JavaScript, and Golang</li>
-										<li>Enhanced user interfaces for better usability and responsiveness</li>
-										<li>Optimized application performance through efficient coding practices</li>
-									</ul>
-								</div>
-								<div class="timeline-tech">
-									<span class="tech-tag">PHP</span>
-									<span class="tech-tag">MySQL</span>
-									<span class="tech-tag">JavaScript</span>
-									<span class="tech-tag">Golang</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Education -->
-					<div class="timeline-section">
-						<h3 class="timeline-section-title" data-aos="fade-up">Education</h3>
-						
-						<div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
-							<div class="timeline-marker education">
-								<i class="fas fa-graduation-cap"></i>
-							</div>
-							<div class="timeline-content">
-								<div class="timeline-header">
-									<h4>Associate Degree in Computer Software Engineering</h4>
-									<span class="company">Islamic Azad University, Mashhad - Iran</span>
-									<span class="duration">2022 - 2025</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
-							<div class="timeline-marker education">
-								<i class="fas fa-graduation-cap"></i>
-							</div>
-							<div class="timeline-content">
-								<div class="timeline-header">
-									<h4>High School</h4>
-									<span class="company">Navvab Safavi, Mashhad - Iran</span>
-									<span class="duration">2018 - 2021</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Skills Section -->
+	<!-- Core Skills Section -->
 	<section id="skills" class="skills">
 		<div class="container">
 			<div class="section-header" data-aos="fade-up">
-				<h2 class="section-title">Skills & Technologies</h2>
-				<p class="section-subtitle">Technologies I work with</p>
+				<h2 class="section-title">Core Skills</h2>
 			</div>
 			<div class="skills-grid">
 				<div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-					<div class="category-header">
-						<i class="fab fa-react"></i>
-						<h3>Frontend Development</h3>
+					<div class="skill-icon">
+						<i class="fas fa-code"></i>
 					</div>
-					<div class="skills-list">
+					<h3>Frontend</h3>
+					<div class="skill-list">
 						<div class="skill-item">
-							<span class="skill-name">React.js</span>
+							<span class="skill-name">React</span>
 							<div class="skill-bar">
-								<div class="skill-progress" data-width="95%"></div>
+								<div class="skill-progress" data-width="90%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<span class="skill-name">Vue</span>
+							<div class="skill-bar">
+								<div class="skill-progress" data-width="85%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<span class="skill-name">Angular</span>
+							<div class="skill-bar">
+								<div class="skill-progress" data-width="80%"></div>
 							</div>
 						</div>
 						<div class="skill-item">
 							<span class="skill-name">Next.js</span>
 							<div class="skill-bar">
-								<div class="skill-progress" data-width="90%"></div>
+								<div class="skill-progress" data-width="75%"></div>
 							</div>
 						</div>
 						<div class="skill-item">
-							<span class="skill-name">TypeScript</span>
+							<span class="skill-name">Gatsby</span>
 							<div class="skill-bar">
-								<div class="skill-progress" data-width="85%"></div>
-							</div>
-						</div>
-						<div class="skill-item">
-							<span class="skill-name">JavaScript</span>
-							<div class="skill-bar">
-								<div class="skill-progress" data-width="95%"></div>
-							</div>
-						</div>
-						<div class="skill-item">
-							<span class="skill-name">Material UI</span>
-							<div class="skill-bar">
-								<div class="skill-progress" data-width="90%"></div>
+								<div class="skill-progress" data-width="70%"></div>
 							</div>
 						</div>
 					</div>
 				</div>
-
 				<div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-					<div class="category-header">
-						<i class="fas fa-code"></i>
-						<h3>State Management</h3>
-					</div>
-					<div class="skills-list">
-						<div class="skill-item">
-							<span class="skill-name">Redux</span>
-							<div class="skill-bar">
-								<div class="skill-progress" data-width="85%"></div>
-							</div>
-						</div>
-						<div class="skill-item">
-							<span class="skill-name">Zustand</span>
-							<div class="skill-bar">
-								<div class="skill-progress" data-width="80%"></div>
-							</div>
-						</div>
-						<div class="skill-item">
-							<span class="skill-name">React Query</span>
-							<div class="skill-bar">
-								<div class="skill-progress" data-width="90%"></div>
-							</div>
-						</div>
-						<div class="skill-item">
-							<span class="skill-name">React Hook Form</span>
-							<div class="skill-bar">
-								<div class="skill-progress" data-width="85%"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-					<div class="category-header">
-						<i class="fas fa-tools"></i>
-						<h3>Development Tools</h3>
-					</div>
-					<div class="skills-list">
-						<div class="skill-item">
-							<span class="skill-name">HTML5</span>
-							<div class="skill-bar">
-								<div class="skill-progress" data-width="95%"></div>
-							</div>
-						</div>
-						<div class="skill-item">
-							<span class="skill-name">CSS3</span>
-							<div class="skill-bar">
-								<div class="skill-progress" data-width="90%"></div>
-							</div>
-						</div>
-						<div class="skill-item">
-							<span class="skill-name">Git</span>
-							<div class="skill-bar">
-								<div class="skill-progress" data-width="85%"></div>
-							</div>
-						</div>
-						<div class="skill-item">
-							<span class="skill-name">Webpack</span>
-							<div class="skill-bar">
-								<div class="skill-progress" data-width="80%"></div>
-							</div>
-						</div>
-						<div class="skill-item">
-							<span class="skill-name">Vite</span>
-							<div class="skill-bar">
-								<div class="skill-progress" data-width="85%"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="skill-category" data-aos="fade-up" data-aos-delay="400">
-					<div class="category-header">
+					<div class="skill-icon">
 						<i class="fas fa-server"></i>
-						<h3>Backend & Database</h3>
 					</div>
-					<div class="skills-list">
+					<h3>Backend</h3>
+					<div class="skill-list">
 						<div class="skill-item">
 							<span class="skill-name">Node.js</span>
+							<div class="skill-bar">
+								<div class="skill-progress" data-width="80%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<span class="skill-name">Express.js</span>
 							<div class="skill-bar">
 								<div class="skill-progress" data-width="75%"></div>
 							</div>
 						</div>
 						<div class="skill-item">
-							<span class="skill-name">PHP</span>
-							<div class="skill-bar">
-								<div class="skill-progress" data-width="80%"></div>
-							</div>
-						</div>
-						<div class="skill-item">
-							<span class="skill-name">Golang</span>
+							<span class="skill-name">MongoDB</span>
 							<div class="skill-bar">
 								<div class="skill-progress" data-width="70%"></div>
 							</div>
 						</div>
 						<div class="skill-item">
-							<span class="skill-name">MySQL</span>
+							<span class="skill-name">PostgreSQL</span>
 							<div class="skill-bar">
-								<div class="skill-progress" data-width="80%"></div>
+								<div class="skill-progress" data-width="65%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<span class="skill-name">Firebase</span>
+							<div class="skill-bar">
+								<div class="skill-progress" data-width="60%"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+					<div class="skill-icon">
+						<i class="fas fa-tools"></i>
+					</div>
+					<h3>Tools & Others</h3>
+					<div class="skill-list">
+						<div class="skill-item">
+							<span class="skill-name">Git</span>
+							<div class="skill-bar">
+								<div class="skill-progress" data-width="95%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<span class="skill-name">Docker</span>
+							<div class="skill-bar">
+								<div class="skill-progress" data-width="85%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<span class="skill-name">AWS</span>
+							<div class="skill-bar">
+								<div class="skill-progress" data-width="75%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<span class="skill-name">Figma</span>
+							<div class="skill-bar">
+								<div class="skill-progress" data-width="70%"></div>
+							</div>
+						</div>
+						<div class="skill-item">
+							<span class="skill-name">Jira</span>
+							<div class="skill-bar">
+								<div class="skill-progress" data-width="65%"></div>
 							</div>
 						</div>
 					</div>
@@ -537,170 +270,435 @@
 		</div>
 	</section>
 
-	<!-- Projects Section -->
-	<section id="projects" class="projects">
+	<!-- Professional Experience Section -->
+	<section id="experience" class="experience">
+		<div class="container">
+			<div class="section-header" data-aos="fade-up">
+				<h2 class="section-title">Professional Experience</h2>
+			</div>
+			<div class="experience-list">
+				<div class="experience-item" data-aos="fade-up" data-aos-delay="100">
+					<div class="experience-header">
+						<h3>Senior Frontend Developer</h3>
+						<div class="experience-meta">
+							<span class="company">Calibrion AI</span>
+							<span class="duration">Jan 2023 - Present</span>
+						</div>
+					</div>
+					<div class="experience-content">
+						<div class="experience-column">
+							<ul>
+								<li>Developed reusable UI components using React.js</li>
+								<li>Implemented responsive design principles</li>
+								<li>Collaborated with UX designers and backend developers</li>
+							</ul>
+						</div>
+						<div class="experience-column">
+							<ul>
+								<li>Integrated RESTful APIs into frontend architecture</li>
+								<li>Optimized application performance</li>
+								<li>Mentored junior developers</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="experience-item" data-aos="fade-up" data-aos-delay="200">
+					<div class="experience-header">
+						<h3>Frontend Developer</h3>
+						<div class="experience-meta">
+							<span class="company">Philia</span>
+							<span class="duration">Jun 2023 - Present</span>
+						</div>
+					</div>
+					<div class="experience-content">
+						<div class="experience-column">
+							<ul>
+								<li>Built dual dashboard panels for business and client users</li>
+								<li>Utilized React.js, Material UI, and React Query</li>
+								<li>Developed interactive game components</li>
+							</ul>
+						</div>
+						<div class="experience-column">
+							<ul>
+								<li>Enhanced overall UI/UX for responsive interface</li>
+								<li>Implemented modern React patterns</li>
+								<li>Collaborated with cross-functional teams</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="experience-item" data-aos="fade-up" data-aos-delay="300">
+					<div class="experience-header">
+						<h3>Full-stack Developer</h3>
+						<div class="experience-meta">
+							<span class="company">Deviatech</span>
+							<span class="duration">Feb 2019 - Mar 2022</span>
+						</div>
+					</div>
+					<div class="experience-content">
+						<div class="experience-column">
+							<ul>
+								<li>Developed and maintained multiple web applications</li>
+								<li>Worked across the full stack using PHP, MySQL, JavaScript, and Golang</li>
+								<li>Enhanced user interfaces for better usability and responsiveness</li>
+							</ul>
+						</div>
+						<div class="experience-column">
+							<ul>
+								<li>Optimized application performance through efficient coding practices</li>
+								<li>Designed database schemas and implemented authentication systems</li>
+								<li>Provided technical support and documentation</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Featured Projects Section -->
+	<section id="portfolio" class="portfolio">
 		<div class="container">
 			<div class="section-header" data-aos="fade-up">
 				<h2 class="section-title">Featured Projects</h2>
-				<p class="section-subtitle">Some of my recent work</p>
 			</div>
 			<div class="projects-grid">
 				<div class="project-card" data-aos="fade-up" data-aos-delay="100">
 					<div class="project-image">
 						<img src="images/portfolio-1.jpg" alt="Calibrion AI">
-						<div class="project-overlay">
-							<div class="project-links">
-								<a href="https://www.calibrion.ai/" target="_blank" class="project-link">
-									<i class="fas fa-external-link-alt"></i>
-								</a>
-								<a href="#" class="project-link">
-									<i class="fas fa-code"></i>
-								</a>
-							</div>
-						</div>
 					</div>
 					<div class="project-content">
 						<h3>Calibrion AI</h3>
 						<p>AI-powered platform for data analysis and business intelligence with advanced React.js frontend and Django backend.</p>
-						<div class="project-tech">
-							<span class="tech-tag">React.js</span>
-							<span class="tech-tag">Material UI</span>
-							<span class="tech-tag">React Query</span>
-							<span class="tech-tag">Zustand</span>
-							<span class="tech-tag">Python</span>
-							<span class="tech-tag">Django</span>
-						</div>
 					</div>
 				</div>
-
 				<div class="project-card" data-aos="fade-up" data-aos-delay="200">
 					<div class="project-image">
 						<img src="images/portfolio-2.jpg" alt="Philia">
-						<div class="project-overlay">
-							<div class="project-links">
-								<a href="https://philia.vip/" target="_blank" class="project-link">
-									<i class="fas fa-external-link-alt"></i>
-								</a>
-								<a href="#" class="project-link">
-									<i class="fas fa-code"></i>
-								</a>
-							</div>
-						</div>
 					</div>
 					<div class="project-content">
 						<h3>Philia</h3>
 						<p>Social platform with dual dashboard system for business and client users, featuring interactive game components.</p>
-						<div class="project-tech">
-							<span class="tech-tag">React.js</span>
-							<span class="tech-tag">Material UI</span>
-							<span class="tech-tag">React Query</span>
-							<span class="tech-tag">Next.js</span>
-							<span class="tech-tag">Python</span>
-							<span class="tech-tag">Django</span>
-						</div>
 					</div>
 				</div>
-
 				<div class="project-card" data-aos="fade-up" data-aos-delay="300">
 					<div class="project-image">
 						<img src="images/portfolio-3.jpg" alt="Zoneit">
-						<div class="project-overlay">
-							<div class="project-links">
-								<a href="https://zoneit.cloud/" target="_blank" class="project-link">
-									<i class="fas fa-external-link-alt"></i>
-								</a>
-								<a href="#" class="project-link">
-									<i class="fas fa-code"></i>
-								</a>
-							</div>
-						</div>
 					</div>
 					<div class="project-content">
 						<h3>Zoneit</h3>
 						<p>Cloud hosting platform with modern UI/UX design and responsive interface built with React.js and Next.js.</p>
-						<div class="project-tech">
-							<span class="tech-tag">HTML5</span>
-							<span class="tech-tag">CSS3</span>
-							<span class="tech-tag">React.js</span>
-							<span class="tech-tag">Next.js</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="project-card" data-aos="fade-up" data-aos-delay="400">
-					<div class="project-image">
-						<img src="images/portfolio-4.jpg" alt="Deviatech">
-						<div class="project-overlay">
-							<div class="project-links">
-								<a href="https://deviatech.com/" target="_blank" class="project-link">
-									<i class="fas fa-external-link-alt"></i>
-								</a>
-								<a href="#" class="project-link">
-									<i class="fas fa-code"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="project-content">
-						<h3>Deviatech</h3>
-						<p>Full-stack web application with seamless frontend-backend integration using modern technologies.</p>
-						<div class="project-tech">
-							<span class="tech-tag">MySQL</span>
-							<span class="tech-tag">Golang</span>
-							<span class="tech-tag">React.js</span>
-							<span class="tech-tag">Next.js</span>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Contact Section -->
+	<!-- Education Section -->
+	<section id="education" class="education">
+		<div class="container">
+			<div class="section-header" data-aos="fade-up">
+				<h2 class="section-title">Education</h2>
+			</div>
+			<div class="education-grid">
+				<div class="education-card" data-aos="fade-up" data-aos-delay="100">
+					<div class="education-icon">
+						<i class="fas fa-graduation-cap"></i>
+					</div>
+					<h3>Associate Degree</h3>
+					<h4>Computer Software Engineering</h4>
+					<p>Islamic Azad University, Mashhad - Iran</p>
+					<span class="education-duration">2022 - 2025</span>
+				</div>
+				<div class="education-card" data-aos="fade-up" data-aos-delay="200">
+					<div class="education-icon">
+						<i class="fas fa-school"></i>
+					</div>
+					<h3>High School</h3>
+					<h4>Science Stream</h4>
+					<p>Navvab Safavi, Mashhad - Iran</p>
+					<span class="education-duration">2018 - 2021</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- By The Numbers Section -->
+	<section id="numbers" class="numbers">
+		<div class="container">
+			<div class="section-header" data-aos="fade-up">
+				<h2 class="section-title">By The Numbers</h2>
+			</div>
+			<div class="numbers-grid">
+				<div class="number-item" data-aos="fade-up" data-aos-delay="100">
+					<div class="number-icon">
+						<i class="fas fa-file-alt"></i>
+						</div>
+					<div class="number-content">
+						<h3>5+</h3>
+						<p>Years Experience</p>
+					</div>
+				</div>
+				<div class="number-item" data-aos="fade-up" data-aos-delay="200">
+					<div class="number-icon">
+						<i class="fas fa-trophy"></i>
+					</div>
+					<div class="number-content">
+						<h3>50+</h3>
+						<p>Projects Completed</p>
+							</div>
+						</div>
+				<div class="number-item" data-aos="fade-up" data-aos-delay="300">
+					<div class="number-icon">
+						<i class="fas fa-users"></i>
+					</div>
+					<div class="number-content">
+						<h3>30+</h3>
+						<p>Happy Clients</p>
+					</div>
+				</div>
+				<div class="number-item" data-aos="fade-up" data-aos-delay="400">
+					<div class="number-icon">
+						<i class="fas fa-code"></i>
+						</div>
+					<div class="number-content">
+						<h3>30%</h3>
+						<p>Repeat Clients</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Client Testimonials Section -->
+	<section id="testimonial" class="testimonials">
+		<div class="container">
+			<div class="section-header" data-aos="fade-up">
+				<h2 class="section-title">Client Testimonials</h2>
+			</div>
+			<div class="testimonials-grid">
+				<div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+					<div class="testimonial-content">
+						<p>"Exceptional work! The project was delivered on time and exceeded our expectations. Highly recommended for any frontend development needs."</p>
+					</div>
+					<div class="testimonial-author">
+						<div class="author-image">
+							<img src="images/user-3.jpg" alt="Emily Johnson">
+						</div>
+						<div class="author-info">
+							<h4>Emily Johnson</h4>
+							<p>Project Manager</p>
+						</div>
+					</div>
+					<div class="testimonial-rating">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+								</div>
+							</div>
+				<div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+					<div class="testimonial-content">
+						<p>"Professional, reliable, and incredibly talented. The quality of work and attention to detail is outstanding. Will definitely work together again."</p>
+					</div>
+					<div class="testimonial-author">
+						<div class="author-image">
+							<img src="images/user-3.jpg" alt="Michael Chen">
+						</div>
+						<div class="author-info">
+							<h4>Michael Chen</h4>
+							<p>CEO, TechCorp</p>
+								</div>
+							</div>
+					<div class="testimonial-rating">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+								</div>
+							</div>
+				<div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+					<div class="testimonial-content">
+						<p>"Amazing developer with great communication skills. The final product was exactly what we envisioned and more. Truly impressed!"</p>
+					</div>
+					<div class="testimonial-author">
+						<div class="author-image">
+							<img src="images/user-3.jpg" alt="Sarah Rodriguez">
+						</div>
+						<div class="author-info">
+							<h4>Sarah Rodriguez</h4>
+							<p>Marketing Director</p>
+						</div>
+					</div>
+					<div class="testimonial-rating">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services I Offer Section -->
+	<section id="services" class="services">
+		<div class="container">
+			<div class="section-header" data-aos="fade-up">
+				<h2 class="section-title">Services I Offer</h2>
+			</div>
+			<div class="services-grid">
+				<div class="service-card" data-aos="fade-up" data-aos-delay="100">
+					<div class="service-icon">
+						<i class="fas fa-code"></i>
+					</div>
+					<h3>Frontend Development</h3>
+					<p>Creating responsive and interactive user interfaces using modern technologies.</p>
+					<ul>
+						<li>React.js</li>
+						<li>Vue.js</li>
+						<li>Angular</li>
+						<li>TypeScript</li>
+					</ul>
+				</div>
+				<div class="service-card" data-aos="fade-up" data-aos-delay="200">
+					<div class="service-icon">
+						<i class="fas fa-puzzle-piece"></i>
+					</div>
+					<h3>Component-Based Architecture</h3>
+					<p>Building scalable and maintainable component libraries for consistent UI development.</p>
+					<ul>
+						<li>Storybook</li>
+						<li>Design Systems</li>
+						<li>Reusable Components</li>
+						<li>UI Libraries</li>
+					</ul>
+				</div>
+				<div class="service-card" data-aos="fade-up" data-aos-delay="300">
+					<div class="service-icon">
+						<i class="fas fa-tachometer-alt"></i>
+					</div>
+					<h3>Performance Optimization</h3>
+					<p>Optimizing web applications for speed, efficiency, and better user experience.</p>
+					<ul>
+						<li>Code Splitting</li>
+						<li>Lazy Loading</li>
+						<li>Bundle Optimization</li>
+						<li>Performance Monitoring</li>
+					</ul>
+				</div>
+				<div class="service-card" data-aos="fade-up" data-aos-delay="400">
+					<div class="service-icon">
+						<i class="fas fa-plug"></i>
+					</div>
+					<h3>API Integration</h3>
+					<p>Seamlessly connecting frontend applications with backend services and third-party APIs.</p>
+					<ul>
+						<li>RESTful APIs</li>
+						<li>GraphQL</li>
+						<li>WebSocket</li>
+						<li>Real-time Data</li>
+					</ul>
+				</div>
+				<div class="service-card" data-aos="fade-up" data-aos-delay="500">
+					<div class="service-icon">
+						<i class="fas fa-globe"></i>
+					</div>
+					<h3>Cross-Browser Compatibility</h3>
+					<p>Ensuring consistent functionality and appearance across all major browsers and devices.</p>
+					<ul>
+						<li>Browser Testing</li>
+						<li>Polyfills</li>
+						<li>Responsive Design</li>
+						<li>Mobile Optimization</li>
+					</ul>
+				</div>
+				<div class="service-card" data-aos="fade-up" data-aos-delay="600">
+					<div class="service-icon">
+						<i class="fas fa-handshake"></i>
+					</div>
+					<h3>Team Collaboration</h3>
+					<p>Working effectively with cross-functional teams using modern development practices.</p>
+					<ul>
+						<li>Agile Methodologies</li>
+						<li>Version Control</li>
+						<li>Code Reviews</li>
+						<li>Documentation</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Let's Work Together Section -->
 	<section id="contact" class="contact">
 		<div class="container">
 			<div class="section-header" data-aos="fade-up">
 				<h2 class="section-title">Let's Work Together</h2>
-				<p class="section-subtitle">Ready to bring your ideas to life</p>
+				<p class="section-subtitle">Ready to bring your ideas to life? Let's connect and create something amazing together.</p>
 			</div>
 			<div class="contact-content">
-				<div class="contact-info" data-aos="fade-right" data-aos-duration="800">
-					<div class="contact-card trust-card">
-						<h3>Get In Touch</h3>
-						<div class="trust-indicator">
-							<i class="fas fa-clock"></i>
-							<span>Available for New Projects</span>
+				<div class="contact-form" data-aos="fade-right" data-aos-duration="800">
+					<h3>Send a Message</h3>
+					<form class="form">
+						<div class="form-row">
+							<div class="form-group">
+								<input type="text" id="firstName" class="form-control" placeholder="First Name" required>
+							</div>
+						<div class="form-group">
+								<input type="text" id="lastName" class="form-control" placeholder="Last Name" required>
+							</div>
 						</div>
-						<p>With over 5 years of experience in frontend development and a proven track record of creating scalable web applications using React.js, Next.js, and modern technologies, I'm ready to bring value to your next project.</p>
-						<div class="contact-details">
-							<div class="contact-item">
-								<i class="fas fa-envelope"></i>
-								<div>
-									<h4>Email</h4>
-									<p>smhnaqvi111@gmail.com</p>
+						<div class="form-group">
+							<input type="email" id="email" class="form-control" placeholder="Email" required>
 								</div>
+						<div class="form-group">
+							<input type="text" id="subject" class="form-control" placeholder="Subject" required>
 							</div>
-							<div class="contact-item">
-								<i class="fas fa-phone"></i>
-								<div>
-									<h4>Phone</h4>
-									<p>+92 328 753 8988</p>
+						<div class="form-group">
+							<textarea id="message" class="form-control" rows="6" placeholder="Message" required></textarea>
 								</div>
+						<button type="submit" class="btn btn-primary">
+							<span>Send Message</span>
+						</button>
+					</form>
 							</div>
-							<div class="contact-item">
+				<div class="contact-info" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+					<div class="contact-card">
+						<div class="contact-icon">
 								<i class="fas fa-map-marker-alt"></i>
-								<div>
+						</div>
 									<h4>Location</h4>
 									<p>Lahore, Pakistan</p>
+						<span>Available for remote work</span>
+					</div>
+					<div class="contact-card">
+						<div class="contact-icon">
+							<i class="fas fa-phone"></i>
 								</div>
+						<h4>Phone</h4>
+						<p>+92 328 753 8988</p>
+						<span>Mon - Fri, 9 AM - 5 PM</span>
 							</div>
+					<div class="contact-card">
+						<div class="contact-icon">
+							<i class="fas fa-envelope"></i>
 						</div>
+						<h4>Email</h4>
+						<p>smhnaqvi111@gmail.com</p>
+						<span>Feel free to send me an email</span>
+					</div>
+					<div class="social-section">
+						<h4>Connect With Me</h4>
 						<div class="social-links">
-							<a href="https://github.com/smhnaqvi" target="_blank" class="social-link">
-								<i class="fab fa-github"></i>
-							</a>
 							<a href="https://www.linkedin.com/in/smhnaqvi/" target="_blank" class="social-link">
 								<i class="fab fa-linkedin-in"></i>
+							</a>
+							<a href="https://github.com/smhnaqvi" target="_blank" class="social-link">
+								<i class="fab fa-github"></i>
 							</a>
 							<a href="https://twitter.com/_smhnaqvi" target="_blank" class="social-link">
 								<i class="fab fa-twitter"></i>
@@ -711,26 +709,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="contact-form" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
-					<form class="form">
-						<div class="form-group">
-							<input type="text" id="name" class="form-control" placeholder="Your Name" required>
-						</div>
-						<div class="form-group">
-							<input type="email" id="email" class="form-control" placeholder="Your Email" required>
-						</div>
-						<div class="form-group">
-							<input type="text" id="subject" class="form-control" placeholder="Subject" required>
-						</div>
-						<div class="form-group">
-							<textarea id="message" class="form-control" rows="6" placeholder="Your Message" required></textarea>
-						</div>
-						<button type="submit" class="btn btn-primary">
-							<span>Send Message</span>
-							<i class="fas fa-paper-plane"></i>
-						</button>
-					</form>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -739,15 +717,58 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer-content">
-				<div class="footer-text">
-					<p>&copy; 2025 Syed Mohammad Hussain Naqvi. All rights reserved.</p>
-					<p>Made with 
-						<svg class="heart-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.61C2.1283 5.6417 1.5487 7.04097 1.5487 8.5C1.5487 9.95903 2.1283 11.3583 3.16 12.39L12 21.23L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.5C22.4518 7.77752 22.3095 7.06211 22.0329 6.39467C21.7563 5.72723 21.351 5.1208 20.84 4.61Z" fill="currentColor"/>
-						</svg>
-						and modern web technologies
-					</p>
+				<div class="footer-column">
+					<h3>SMHN</h3>
+					<p>Lahore, Pakistan<br>Available for remote work</p>
+					<p>Phone: +92 328 753 8988<br>Email: smhnaqvi111@gmail.com</p>
+					<div class="footer-social">
+						<a href="https://www.linkedin.com/in/smhnaqvi/" target="_blank" class="social-link">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+						<a href="https://github.com/smhnaqvi" target="_blank" class="social-link">
+							<i class="fab fa-github"></i>
+						</a>
+						<a href="https://twitter.com/_smhnaqvi" target="_blank" class="social-link">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="https://www.instagram.com/smhn.dev/" target="_blank" class="social-link">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
 				</div>
+				<div class="footer-column">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#experience">Experience</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h4>Services</h4>
+					<ul>
+						<li><a href="#services">Frontend Development</a></li>
+						<li><a href="#services">Component-Based</a></li>
+						<li><a href="#services">Performance Optimization</a></li>
+						<li><a href="#services">API Integration</a></li>
+						<li><a href="#services">Cross-Browser Compatibility</a></li>
+						<li><a href="#services">Team Collaboration</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h4>More Info</h4>
+					<ul>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2025 Syed Mohammad Hussain Naqvi. All rights reserved.</p>
 			</div>
 		</div>
 	</footer>
