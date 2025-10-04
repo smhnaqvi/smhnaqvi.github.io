@@ -75,16 +75,18 @@ class Navigation {
   handleSmoothScroll() {
     navLinks.forEach(link => {
       link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href') || '';
+        const isHash = href.startsWith('#');
+        const isSamePageHash = isHash && href.length > 1;
+
+        // Only intercept in-page hash links
+        if (!isSamePageHash) return;
+
         e.preventDefault();
-        const targetId = link.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
-        
+        const targetSection = document.querySelector(href);
         if (targetSection) {
           const offsetTop = targetSection.offsetTop - 70;
-          window.scrollTo({
-            top: offsetTop,
-            behavior: 'smooth'
-          });
+          window.scrollTo({ top: offsetTop, behavior: 'smooth' });
         }
       });
     });

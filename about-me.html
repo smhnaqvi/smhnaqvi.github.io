@@ -1,0 +1,435 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>About Me – Syed Mohammad Hussain Naqvi | Article</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="An in-depth look at my journey, philosophy, and technical expertise across frontend and full‑stack development – written as a long‑form, visual article." />
+	<meta name="keywords" content="About me, frontend engineer, React, Next.js, TypeScript, developer story, engineering philosophy, performance optimization" />
+	<meta name="author" content="Syed Mohammad Hussain Naqvi" />
+	<meta name="robots" content="index, follow" />
+	<link rel="canonical" href="https://smhn.me/about-me.html" />
+
+	<!-- Open Graph / Twitter for Article -->
+	<meta property="og:title" content="About Me – Syed Mohammad Hussain Naqvi | Article"/>
+	<meta property="og:description" content="My journey from full‑stack to Senior Frontend Engineer, principles, and skills – in a beautiful, visual article."/>
+	<meta property="og:image" content="images/cover_bg_3.png"/>
+	<meta property="og:url" content="https://smhn.me/about-me.html"/>
+	<meta property="og:site_name" content="Syed Mohammad Hussain Naqvi"/>
+	<meta property="og:type" content="article"/>
+	<meta property="article:author" content="https://www.linkedin.com/in/smhnaqvi/"/>
+	<meta property="article:published_time" content="2025-10-04T00:00:00+00:00"/>
+	<meta property="article:modified_time" content="2025-10-04T00:00:00+00:00"/>
+	<meta property="article:tag" content="Frontend"/>
+	<meta property="article:tag" content="React"/>
+	<meta property="article:tag" content="Next.js"/>
+	<meta property="article:tag" content="TypeScript"/>
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="About Me – Syed Mohammad Hussain Naqvi | Article" />
+	<meta name="twitter:description" content="My journey, philosophy, and expertise – presented as a long‑form, visual article." />
+	<meta name="twitter:image" content="images/cover_bg_3.png" />
+	<meta name="twitter:url" content="https://smhn.me/about-me.html" />
+	<meta name="twitter:creator" content="@_smhnaqvi" />
+
+	<!-- JSON-LD: Article with embedded Person author -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Article",
+		"mainEntityOfPage": {
+			"@type": "WebPage",
+			"@id": "https://smhn.me/about-me.html"
+		},
+		"headline": "About Me – My Journey, Principles, and Technical Expertise",
+		"description": "An in-depth look at my journey, philosophy, and technical expertise across frontend and full‑stack development.",
+		"image": [
+			"https://smhn.me/images/cover_bg_3.png",
+			"https://smhn.me/images/profile-image.png"
+		],
+		"author": {
+			"@type": "Person",
+			"name": "Syed Mohammad Hussain Naqvi",
+			"url": "https://smhn.me",
+			"image": "https://smhn.me/images/profile-image.png"
+		},
+		"publisher": {
+			"@type": "Organization",
+			"name": "SMHN",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "https://smhn.me/images/favicon.ico"
+			}
+		},
+		"datePublished": "2025-10-04T00:00:00+00:00",
+		"dateModified": "2025-10-04T00:00:00+00:00",
+		"articleSection": [
+			"Introduction",
+			"Frontend Development",
+			"Backend Foundation",
+			"Architecture & Performance",
+			"UI/UX & Design Systems",
+			"Tools & DevOps",
+			"Collaboration & Leadership",
+			"Final Thoughts"
+		],
+		"keywords": "About me, frontend engineer, React, Next.js, TypeScript, developer story"
+	}
+	</script>
+
+	<!-- Fonts & Icons -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/modern-style.css">
+
+	<!-- Article Styles -->
+	<style>
+		/* Reading progress */
+		.reading-progress {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 4px;
+			width: 0;
+			background: var(--gradient-primary);
+			z-index: 9999;
+			box-shadow: var(--shadow-glow);
+		}
+
+		/* Article hero */
+		.article-hero {
+			background: var(--gradient-hero);
+			padding: 140px 0 100px;
+			position: relative;
+			color: white;
+		}
+		.article-hero::after {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background: linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.85));
+		}
+		.article-hero .container { position: relative; z-index: 2; }
+		.article-title { font-size: 3rem; margin-bottom: .75rem; color: var(--text-dark); }
+		.article-subtitle { opacity: .95; max-width: 800px; color: var(--text-primary); }
+		.byline { display: flex; align-items: center; gap: 14px; margin-top: 20px; opacity: .95; color: var(--text-secondary); }
+		.byline img { width: 44px; height: 44px; border-radius: 50%; border: 2px solid rgba(17,24,39,.15); }
+		.byline .meta { font-weight: 500; }
+
+		/* Article layout */
+		.article-layout { display: grid; grid-template-columns: 280px 1fr; gap: 40px; padding: 80px 0; }
+		.toc { position: sticky; top: 100px; align-self: start; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 20px; box-shadow: var(--shadow-sm); }
+		.toc h4 { margin: 0 0 12px; font-size: 1rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: .06em; }
+		.toc a { display: block; padding: 8px 10px; color: var(--text-secondary); text-decoration: none; border-radius: 10px; transition: .2s; font-weight: 500; }
+		.toc a:hover { background: var(--bg-tertiary); color: var(--text-primary); }
+		.toc a.active { background: rgba(139,92,246,.12); color: var(--primary-purple); border: 1px solid rgba(139,92,246,.2); }
+
+		.article { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 36px 28px; box-shadow: var(--shadow-md); }
+		.article h2 { scroll-margin-top: 120px; }
+		.article p { margin: 14px 0; color: var(--text-primary); }
+
+		/* Anchors */
+		.anchor-link { opacity: 0; margin-left: 8px; font-size: .9rem; color: var(--primary-purple); transition: .2s; text-decoration: none; }
+		h2:hover .anchor-link, h3:hover .anchor-link { opacity: 1; }
+
+		/* Callouts */
+		.callout { border-left: 4px solid var(--primary-purple); background: rgba(139,92,246,.06); padding: 16px 18px; border-radius: 10px; margin: 18px 0; }
+		.callout.success { border-left-color: var(--primary-blue); background: rgba(59,130,246,.07); }
+		.callout.warn { border-left-color: var(--primary-pink); background: rgba(236,72,153,.07); }
+		.callout .label { font-weight: 600; text-transform: uppercase; letter-spacing: .04em; font-size: .8rem; color: var(--text-secondary); }
+
+		/* Pull quote */
+		.pull-quote { position: relative; margin: 28px 0; padding: 20px 24px; border-radius: 14px; background: var(--gradient-card); border: 1px solid rgba(139,92,246,.15); }
+		.pull-quote p { font-size: 1.1rem; font-weight: 600; }
+
+		/* Lists */
+		ul.checklist { list-style: none; padding-left: 0; }
+		ul.checklist li { margin: 10px 0; display: flex; gap: 10px; align-items: flex-start; }
+		ul.checklist li i { color: var(--primary-purple); margin-top: 2px; }
+
+		/* Responsive */
+		@media (max-width: 1024px) {
+			.article-layout { grid-template-columns: 1fr; }
+			.toc { position: relative; top: auto; }
+		}
+		@media (max-width: 768px) {
+			.article-title { font-size: 2.2rem; }
+			.article { padding: 24px 18px; }
+		}
+	</style>
+
+	<script src="js/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+	<div class="reading-progress" id="readingProgress"></div>
+
+	<!-- Navigation -->
+	<nav class="navbar" id="navbar">
+		<div class="nav-container">
+			<div class="nav-logo">
+				<div class="logo-icon">SMHN</div>
+			</div>
+			<div class="nav-menu" id="nav-menu">
+				<a href="index.html#about" class="nav-link">About</a>
+				<a href="index.html#experience" class="nav-link">Experience</a>
+				<a href="index.html#skills" class="nav-link">Skills</a>
+				<a href="index.html#portfolio" class="nav-link">Projects</a>
+			</div>
+			<div class="nav-cta">
+				<a href="index.html#contact" class="btn btn-contact">Contact</a>
+			</div>
+			<div class="nav-toggle" id="nav-toggle">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Article Hero -->
+	<section class="article-hero">
+		<div class="container">
+			<h1 class="article-title" data-aos="fade-up">About Me</h1>
+			<p class="article-subtitle" data-aos="fade-up" data-aos-delay="100">I began as a full‑stack developer experimenting with PHP and Golang. Today, I craft performant, scalable web applications as a Senior Frontend Engineer, specializing in React, Next.js, and TypeScript.</p>
+			<div class="byline" data-aos="fade-up" data-aos-delay="150">
+				<img src="images/profile-image.png" alt="Syed Mohammad Hussain Naqvi" />
+				<div class="meta">By Syed Mohammad Hussain Naqvi · Updated Oct 4, 2025 · ~6–8 min read</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Article Layout -->
+	<section class="container article-layout">
+		<aside class="toc" aria-label="Table of contents">
+			<h4>On this page</h4>
+			<a href="#introduction">Introduction</a>
+			<a href="#frontend-development">Frontend Development</a>
+			<a href="#backend-foundation">Backend Foundation</a>
+			<a href="#architecture-performance">Architecture & Performance</a>
+			<a href="#uiux-design-systems">UI/UX & Design Systems</a>
+			<a href="#tools-devops">Tools, DevOps & Workflow</a>
+			<a href="#collaboration-leadership">Collaboration & Leadership</a>
+			<a href="#final-thoughts">Final Thoughts</a>
+		</aside>
+
+		<article class="article">
+			<section id="introduction" data-aos="fade-up">
+				<h2>Introduction<a class="anchor-link" href="#introduction" aria-label="Anchor">#</a></h2>
+				<p>Over the past seven years, I’ve evolved from a full‑stack developer into a modern Frontend Engineer. My work centers on building interfaces that are beautiful, accessible, and fast — without compromising scalability or developer experience.</p>
+				<div class="pull-quote">
+					<p>Great UI is more than visuals — it’s performance, clarity, and care for users.</p>
+				</div>
+			</section>
+
+			<section id="frontend-development" data-aos="fade-up">
+				<h2>Frontend Development — Core Expertise<a class="anchor-link" href="#frontend-development" aria-label="Anchor">#</a></h2>
+				<p>I specialize in React and Next.js, focusing on composition, state management, and performance. I embrace modern patterns like server components, suspense, and co-location of data and UI.</p>
+				<h3>Skills<a class="anchor-link" href="#frontend-development" aria-label="Anchor">#</a></h3>
+				<ul class="checklist">
+					<li><i class="fas fa-check"></i><span>React.js — Functional components, hooks, context, custom hooks, code‑splitting</span></li>
+					<li><i class="fas fa-check"></i><span>Next.js — SSR/SSG, App Router, middleware, SEO, i18n, auth</span></li>
+					<li><i class="fas fa-check"></i><span>TypeScript — Interfaces, generics, utility types, safe component APIs</span></li>
+					<li><i class="fas fa-check"></i><span>State — Redux, Zustand, React Query</span></li>
+					<li><i class="fas fa-check"></i><span>Styling — MUI, Tailwind, CSS Modules, SCSS</span></li>
+				</ul>
+				<div class="callout success">
+					<div class="label">Interview Focus</div>
+					<p>Explain React rendering and reconciliation; compare SSR vs CSR vs SSG; implement small features using hooks; discuss React Query caching and mutation flows.</p>
+				</div>
+				<div class="callout">
+					<div class="label">Improvement Roadmap</div>
+					<p>Practice React profiling and memoization; build a mini app in Next 14 using server components; explore React 19 features; add unit tests with Jest + RTL.</p>
+				</div>
+			</section>
+
+			<section id="backend-foundation" data-aos="fade-up">
+				<h2>Backend Foundation — Full‑Stack Perspective<a class="anchor-link" href="#backend-foundation" aria-label="Anchor">#</a></h2>
+				<h3>Skills<a class="anchor-link" href="#backend-foundation" aria-label="Anchor">#</a></h3>
+				<ul class="checklist">
+					<li><i class="fas fa-check"></i><span>Golang — REST, GORM, Echo, concurrency</span></li>
+					<li><i class="fas fa-check"></i><span>Node.js — Express, WebSockets, middleware, auth</span></li>
+					<li><i class="fas fa-check"></i><span>Databases — MySQL, PostgreSQL, Prisma ORM</span></li>
+				</ul>
+				<div class="callout success">
+					<div class="label">Interview Focus</div>
+					<p>HTTP lifecycle and REST design; controller/service structure; JWT authentication flows; Go concurrency patterns and relational modeling with GORM.</p>
+				</div>
+				<div class="callout">
+					<div class="label">Improvement Roadmap</div>
+					<p>Build a small Go API integrated with a React frontend; explore GraphQL; add API tests (Go tests + Postman).</p>
+				</div>
+			</section>
+
+			<section id="architecture-performance" data-aos="fade-up">
+				<h2>Architecture & Performance Optimization<a class="anchor-link" href="#architecture-performance" aria-label="Anchor">#</a></h2>
+				<p>I design component systems with clear boundaries, server‑state isolation, and progressive loading strategies that keep apps responsive under load.</p>
+				<ul class="checklist">
+					<li><i class="fas fa-check"></i><span>Clean architecture, reusable components, API abstraction layers</span></li>
+					<li><i class="fas fa-check"></i><span>Server‑state via React Query; client‑state via lightweight stores</span></li>
+					<li><i class="fas fa-check"></i><span>Lazy loading, route‑based chunks, image optimization</span></li>
+					<li><i class="fas fa-check"></i><span>Atomic design principles</span></li>
+				</ul>
+				<div class="callout warn">
+					<div class="label">Interview Focus</div>
+					<p>Explain project structure decisions, avoiding prop drilling, and preventing unnecessary re‑renders; when to pick Zustand vs Redux Toolkit; bundle analysis and Next image handling.</p>
+				</div>
+			</section>
+
+			<section id="uiux-design-systems" data-aos="fade-up">
+				<h2>UI/UX & Design Systems<a class="anchor-link" href="#uiux-design-systems" aria-label="Anchor">#</a></h2>
+				<ul class="checklist">
+					<li><i class="fas fa-check"></i><span>MUI customization, Tailwind theming, responsive design</span></li>
+					<li><i class="fas fa-check"></i><span>Accessibility and semantic HTML</span></li>
+					<li><i class="fas fa-check"></i><span>Framer Motion and CSS transitions</span></li>
+					<li><i class="fas fa-check"></i><span>Figma integration and design tokens</span></li>
+				</ul>
+				<div class="callout">
+					<div class="label">Improvement Roadmap</div>
+					<p>Build a Storybook‑backed component library; introduce design tokens; monitor hydration, CLS, and paint timings.</p>
+				</div>
+			</section>
+
+			<section id="tools-devops" data-aos="fade-up">
+				<h2>Tools, DevOps & Workflow Automation<a class="anchor-link" href="#tools-devops" aria-label="Anchor">#</a></h2>
+				<ul class="checklist">
+					<li><i class="fas fa-check"></i><span>Git, GitHub, branching strategies</span></li>
+					<li><i class="fas fa-check"></i><span>CI/CD with GitHub Actions</span></li>
+					<li><i class="fas fa-check"></i><span>Cloudflare, Vercel, Docker basics</span></li>
+					<li><i class="fas fa-check"></i><span>Postman, Swagger integration</span></li>
+					<li><i class="fas fa-check"></i><span>Chrome extensions & WHMCS automation</span></li>
+				</ul>
+				<div class="callout success">
+					<div class="label">Interview Focus</div>
+					<p>Rebase vs merge; CI/CD pipelines; secure handling of API keys and env variables.</p>
+				</div>
+				<div class="callout">
+					<div class="label">Improvement Roadmap</div>
+					<p>Containerize production builds with Docker; wire GitHub Actions; explore Vercel Edge functions and Next middleware.</p>
+				</div>
+			</section>
+
+			<section id="collaboration-leadership" data-aos="fade-up">
+				<h2>Collaboration & Leadership<a class="anchor-link" href="#collaboration-leadership" aria-label="Anchor">#</a></h2>
+				<p>I’ve led frontend teams, run code reviews, and collaborated across disciplines to ship reliable software with a strong UX foundation.</p>
+				<ul class="checklist">
+					<li><i class="fas fa-check"></i><span>Mentorship and coaching</span></li>
+					<li><i class="fas fa-check"></i><span>Agile practices and documentation</span></li>
+					<li><i class="fas fa-check"></i><span>Consistent UI/UX standards across teams</span></li>
+				</ul>
+			</section>
+
+			<section id="final-thoughts" data-aos="fade-up">
+				<h2>Final Thoughts<a class="anchor-link" href="#final-thoughts" aria-label="Anchor">#</a></h2>
+				<p>My strength isn’t just technical depth — it’s connecting the frontend to everything around it: backend systems, design, performance, and user needs. I’m excited by roles where I can combine hands‑on engineering with product thinking and leadership.</p>
+			</section>
+
+			<div class="callout" data-aos="fade-up">
+				<div class="label">Let’s build</div>
+				<p>Have a challenge in mind? <a href="index.html#contact">Reach out</a> — I’d love to help bring it to life.</p>
+			</div>
+		</article>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-column">
+					<h3>SMHN</h3>
+					<p>Lahore, Pakistan<br>Available for remote work</p>
+					<p>Phone: +92 328 753 8988<br>Email: smhnaqvi111@gmail.com</p>
+					<div class="footer-social">
+						<a href="https://www.linkedin.com/in/smhnaqvi/" target="_blank" class="social-link">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+						<a href="https://github.com/smhnaqvi" target="_blank" class="social-link">
+							<i class="fab fa-github"></i>
+						</a>
+						<a href="https://twitter.com/_smhnaqvi" target="_blank" class="social-link">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="https://www.instagram.com/smhn.dev/" target="_blank" class="social-link">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+				<div class="footer-column">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about-me.html">About</a></li>
+						<li><a href="index.html#skills">Skills</a></li>
+						<li><a href="index.html#experience">Experience</a></li>
+						<li><a href="index.html#portfolio">Portfolio</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h4>Services</h4>
+					<ul>
+						<li><a href="index.html#services">Frontend Development</a></li>
+						<li><a href="index.html#services">Component-Based</a></li>
+						<li><a href="index.html#services">Performance Optimization</a></li>
+						<li><a href="index.html#services">API Integration</a></li>
+						<li><a href="index.html#services">Cross-Browser Compatibility</a></li>
+						<li><a href="index.html#services">Team Collaboration</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h4>More Info</h4>
+					<ul>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2025 Syed Mohammad Hussain Naqvi. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Back to Top -->
+	<div class="back-to-top" id="backToTop">
+		<i class="fas fa-chevron-up"></i>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="js/modern-scripts.js"></script>
+	<script>
+		AOS.init({ duration: 1000, easing: 'ease-in-out', once: true, offset: 100 });
+
+		// Reading progress
+		const progressEl = document.getElementById('readingProgress');
+		const onScroll = () => {
+			const scrollTop = window.scrollY || document.documentElement.scrollTop;
+			const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+			const progress = Math.min(100, (scrollTop / docHeight) * 100);
+			progressEl.style.width = progress + '%';
+		};
+		window.addEventListener('scroll', onScroll, { passive: true });
+		onScroll();
+
+		// TOC active link
+		const tocLinks = Array.from(document.querySelectorAll('.toc a'));
+		const sections = tocLinks.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+		const setActive = () => {
+			let activeId = null;
+			for (const sec of sections) {
+				const rect = sec.getBoundingClientRect();
+				if (rect.top <= 140 && rect.bottom > 140) { activeId = '#' + sec.id; break; }
+			}
+			tocLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === activeId));
+		};
+		window.addEventListener('scroll', setActive, { passive: true });
+		setActive();
+	</script>
+
+</body>
+</html>
