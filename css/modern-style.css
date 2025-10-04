@@ -1196,12 +1196,12 @@ p {
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 16px;
 }
 
 .contact-card {
   background: var(--bg-card);
-  padding: 2rem;
+  padding: 16px;
   border-radius: 20px;
   box-shadow: var(--shadow-md);
   border: 1px solid var(--border-light);
@@ -1244,6 +1244,9 @@ p {
 }
 
 .social-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: var(--bg-card);
   padding: 2rem;
   border-radius: 20px;
