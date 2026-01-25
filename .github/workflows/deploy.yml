@@ -39,6 +39,9 @@ jobs:
       - name: Build with Next.js
         run: npm run build
 
+      - name: List output for debugging # این خط به ما کمک می‌کند بفهمیم پوشه کجاست
+        run: ls -R
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
