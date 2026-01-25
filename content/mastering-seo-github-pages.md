@@ -30,3 +30,16 @@ export const metadata = {
   title: 'My Awesome Blog',
   description: 'A blog built with Next.js',
 }
+```
+
+And here is an inline code example: `next build && next export`.
+
+### Table example
+
+| Feature | Supported |
+| --- | --- |
+| Tables | ✅ |
+| Task lists | ✅ |
+
+- [x] Markdown rendering
+- [x] Code blocks

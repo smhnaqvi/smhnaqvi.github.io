@@ -23,7 +23,7 @@ export function getPostBySlug(slug: string) {
       metadata: data,
       content,
     };
-  } catch (e) {
+  } catch {
     return null;
   }
 }
