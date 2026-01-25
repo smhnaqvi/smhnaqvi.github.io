@@ -2,7 +2,7 @@
 id: 1
 title: "Next.js 15 SEO: The Definitive Production Guide"
 description: "A complete production-ready guide to mastering SEO in Next.js 15 using metadata, structured data, performance optimization, and best practices."
-thumbnail: "/images/blog-2.jpg"
+thumbnail: "/images/blog/nextjs-seo-production-guide.png"
 author: "Syed Muhammad Hussain Naqvi"
 publishedAt: "2024-03-20"
 tags: ["Next.js", "SEO", "Web Performance", "Metadata", "SSG"]
