@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "slug": "nextjs-github-pages-seo",
+    "title": "Mastering SEO on GitHub Pages with Next.js",
+    "description": "How to build a blazing fast and SEO-friendly blog hosted on GitHub Pages?",
+    "thumbnail": "/images/blog-1.jpg",
+    "author": "Syed Muhammad Hussain Naqvi",
+    "publishedAt": "2024-03-20",
+    "tags": ["Next.js", "SEO", "GitHub Pages"],
+    "category": "Web Development",
+    "readingTime": "5 min",
+    "content": "In this article, we will explore the best practices for..."
+  },
+  {
+    "id": 2,
+    "slug": "my-first-experience-typescript",
+    "title": "My Journey into TypeScript",
+    "description": "Why I decided to switch to TypeScript and how it changed my workflow.",
+    "thumbnail": "/images/blog-2.jpg",
+    "author": "Syed Muhammad Hussain Naqvi",
+    "publishedAt": "2024-03-10",
+    "tags": ["TypeScript", "Programming", "Experience"],
+    "category": "Personal",
+    "readingTime": "8 min",
+    "content": "Starting with TypeScript felt overwhelming at first, but..."
+  }
+]
