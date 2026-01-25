@@ -2,7 +2,6 @@
 
 const nextConfig = {
   output: 'export',
-  // images باید مستقیماً در ریشه nextConfig باشد، نه داخل experimental
   images: {
     unoptimized: true,
   },
