@@ -74,7 +74,7 @@ export default function BlogIndexPage() {
                       <div className="relative h-44 w-full sm:h-48">
                         <Image
                           src={post.metadata.thumbnail}
-                          alt=""
+                          alt={title ? `Thumbnail for ${title}` : 'Blog post thumbnail'}
                           fill
                           sizes="(min-width: 640px) 50vw, 100vw"
                           className="object-cover"

@@ -8,6 +8,8 @@ import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import { getPostBySlug, getAllPosts } from '@/lib/posts';
 
+const SITE_URL = 'https://smhnaqvi.github.io';
+
 interface Props {
   params: Promise<{ slug: string }>;
 }
@@ -25,13 +27,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!post) return { title: 'Post Not Found' };
 
+  const title = post.metadata.title
+    ? `${post.metadata.title} | Syed Muhammad Hussain Naqvi`
+    : 'Syed Muhammad Hussain Naqvi';
+  const description = post.metadata.description;
+  const canonical = `${SITE_URL}/blog/${slug}`;
+  const imageUrl = post.metadata.thumbnail
+    ? new URL(post.metadata.thumbnail, SITE_URL).toString()
+    : undefined;
+
   return {
-    title: post.metadata.title,
-    description: post.metadata.description,
+    title,
+    description,
+    alternates: {
+      canonical,
+    },
     openGraph: {
-      title: post.metadata.title,
-      description: post.metadata.description,
-      images: [post.metadata.thumbnail],
+      type: 'article',
+      url: canonical,
+      title,
+      description,
+      images: imageUrl ? [imageUrl] : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: imageUrl ? [imageUrl] : [],
     },
   };
 }
@@ -42,13 +64,39 @@ export default async function PostPage({ params }: Props) {
 
   if (!post) notFound();
 
+  const canonicalUrl = `${SITE_URL}/blog/${slug}`;
+  const imageUrl = post.metadata.thumbnail
+    ? new URL(post.metadata.thumbnail, SITE_URL).toString()
+    : undefined;
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.metadata.title,
+    description: post.metadata.description,
+    image: imageUrl,
+    author: {
+      '@type': 'Person',
+      name: 'Syed Muhammad Hussain Naqvi',
+    },
+    datePublished: post.metadata.publishedAt,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': canonicalUrl,
+    },
+  };
+
   return (
     <main className="min-h-screen">
       {/* Hero / cover */}
       <header className="relative">
         <div className="absolute inset-0 -z-10">
-          <img src={post.metadata.thumbnail} alt="" className="h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-[var(--color-background)]" />
+          <img
+            src={post.metadata.thumbnail}
+            alt={post.metadata.title ? `Cover image for ${post.metadata.title}` : 'Blog post cover image'}
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/55 to-(--color-background)" />
         </div>
 
         <div className="mx-auto max-w-5xl px-6 pt-16 pb-10">
@@ -169,6 +217,11 @@ export default async function PostPage({ params }: Props) {
             </span>
           ))}
         </div>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </article>
     </main>
   );
