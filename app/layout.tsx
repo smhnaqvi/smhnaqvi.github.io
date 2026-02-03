@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     template: "%s | Syed Muhammad Hussain Naqvi",
   },
   description: "Senior engineer specializing in high-impact Next.js applications.",
+  verification: {
+    google: 'nt8hwtvMZTfqzuhVFJ8J4y7PAOS7NH3_iw3TFAyaSfg',
+  },
   alternates: {
     canonical: "/",
   },
