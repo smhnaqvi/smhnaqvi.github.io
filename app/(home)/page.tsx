@@ -159,17 +159,17 @@ export default function HomePage() {
 
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-linear-to-b from-slate-50 via-white to-white dark:from-slate-950 dark:via-slate-950 dark:to-black" />
-        <div className="mx-auto grid max-w-5xl gap-8 px-6 pt-14 pb-12 md:grid-cols-[1.25fr_0.75fr] md:items-center">
-          <div>
+        <div className="mx-auto grid max-w-5xl items-center gap-8 px-6 pt-14 pb-12 md:grid-cols-[1.1fr_0.9fr]">
+          <div className="flex max-w-3xl flex-col items-center text-center md:items-start md:text-left">
             <span className={BADGE}>Available for work</span>
             <h1 className="mt-4 text-balance text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl">
               Syed Mohammad Hussain Naqvi
             </h1>
-            <p className="mt-3 max-w-2xl text-pretty text-base text-slate-600 dark:text-slate-300 sm:text-lg">
+            <p className="mt-3 text-pretty text-base text-slate-600 dark:text-slate-300 sm:text-lg">
               Dynamic Frontend Developer with over 5 years of experience creating scalable,
               high-performance applications using React.js, Next.js, and modern web technologies.
             </p>
-            <div className="mt-6 flex flex-wrap gap-3">
+            <div className="mt-6 flex flex-wrap justify-center gap-3 md:justify-start">
               <a
                 href="#projects"
                 className="rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100"
@@ -189,42 +189,59 @@ export default function HomePage() {
                 Download PDF
               </a>
             </div>
-            <div className="mt-6 flex flex-wrap gap-2">
+            <div className="mt-6 flex flex-wrap justify-center gap-2 md:justify-start">
               {["React.js", "Next.js", "TypeScript", "REST APIs", "UI/UX"].map((item) => (
                 <span key={item} className={BADGE}>
                   {item}
                 </span>
               ))}
             </div>
+            <div className="mt-8 flex flex-wrap justify-center gap-3 md:justify-start">
+              <a
+                href="https://www.linkedin.com/in/smhnaqvi/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-[#0A66C2] px-5 py-2.5 text-sm font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#0958a8] hover:shadow-lg"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
+                  <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.5 8h4V24h-4V8Zm7 0h3.84v2.19h.06c.53-1.01 1.84-2.19 3.79-2.19 4.06 0 4.81 2.67 4.81 6.14V24h-4v-7.78c0-1.86-.03-4.25-2.59-4.25-2.6 0-3 2.03-3 4.12V24h-4V8Z" />
+                </svg>
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/smhnaqvi"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-slate-700 hover:shadow-lg dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
+                  <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58 0-.28-.01-1.04-.02-2.03-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.21.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.46-1.33-5.46-5.92 0-1.31.47-2.39 1.24-3.24-.12-.3-.54-1.53.12-3.2 0 0 1.01-.32 3.3 1.23A11.5 11.5 0 0 1 12 6.32c1.02 0 2.04.14 3 .4 2.29-1.55 3.3-1.23 3.3-1.23.66 1.67.24 2.9.12 3.2.77.85 1.24 1.93 1.24 3.24 0 4.6-2.8 5.61-5.48 5.91.43.37.81 1.1.81 2.22 0 1.6-.01 2.88-.01 3.27 0 .32.21.69.82.57A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z" />
+                </svg>
+                GitHub
+              </a>
+              <a
+                href="https://wa.me/923287538988"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#1fb85a] hover:shadow-lg"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
+                  <path d="M20.52 3.48A11.87 11.87 0 0 0 12.06 0C5.52 0 .2 5.32.2 11.86c0 2.09.55 4.14 1.59 5.95L0 24l6.38-1.67a11.82 11.82 0 0 0 5.67 1.44h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.24-6.15-3.4-8.43Zm-8.46 18.3h-.01a9.8 9.8 0 0 1-5-1.37l-.36-.21-3.79 1 1.01-3.69-.23-.38a9.84 9.84 0 0 1-1.5-5.27c0-5.43 4.42-9.85 9.86-9.85 2.63 0 5.1 1.02 6.96 2.89a9.77 9.77 0 0 1 2.88 6.96c0 5.43-4.42 9.84-9.85 9.84Zm5.4-7.37c-.3-.15-1.77-.87-2.04-.97-.27-.1-.46-.15-.66.15-.2.3-.76.97-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.46-.88-.78-1.47-1.74-1.65-2.04-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.08-.15-.66-1.59-.9-2.17-.24-.57-.48-.5-.66-.51h-.56c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.52s1.08 2.92 1.23 3.12c.15.2 2.13 3.26 5.16 4.57.72.31 1.29.5 1.73.64.73.23 1.4.2 1.93.12.59-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.27-.2-.57-.35Z" />
+                </svg>
+                WhatsApp
+              </a>
+            </div>
           </div>
 
-          <aside className={`${CARD} p-5`}>
-            <div className="flex items-center gap-4">
-              <div className="relative h-16 w-16 overflow-hidden rounded-xl bg-slate-100 dark:bg-white/10">
-                <Image
-                  src="/images/profile-image.png"
-                  alt="Syed Mohammad Hussain Naqvi"
-                  fill
-                  sizes="64px"
-                  className="object-cover"
-                />
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-slate-900 dark:text-slate-100">
-                  Senior Frontend Developer
-                </p>
-                <p className="text-sm text-slate-600 dark:text-slate-300">Lahore, Pakistan</p>
-              </div>
-            </div>
-            <div className="mt-5 grid grid-cols-2 gap-3 text-sm">
-              <div className="rounded-xl bg-slate-100 px-3 py-2 dark:bg-white/10">
-                <p className="text-slate-500 dark:text-slate-400">Experience</p>
-                <p className="font-semibold text-slate-900 dark:text-slate-100">5+ Years</p>
-              </div>
-              <div className="rounded-xl bg-slate-100 px-3 py-2 dark:bg-white/10">
-                <p className="text-slate-500 dark:text-slate-400">Primary Stack</p>
-                <p className="font-semibold text-slate-900 dark:text-slate-100">React / Next.js</p>
-              </div>
+          <aside className="flex flex-col items-center text-center md:justify-self-end">
+            <div className="relative h-[420px] w-[320px]">
+              <Image
+                src="/images/profile-image.png"
+                alt="Syed Mohammad Hussain Naqvi"
+                fill
+                sizes="380px"
+                className="object-contain scale-130 -translate-y-2 mask-[linear-gradient(to_top,transparent_0%,black_35%,black_100%)] [-webkit-mask-image:linear-gradient(to_top,transparent_0%,black_35%,black_100%)]"
+              />
             </div>
           </aside>
         </div>
