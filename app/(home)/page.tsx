@@ -160,7 +160,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-linear-to-b from-slate-50 via-white to-white dark:from-slate-950 dark:via-slate-950 dark:to-black" />
         <div className="mx-auto grid max-w-5xl items-center gap-8 px-6 pt-14 pb-12 md:grid-cols-[1.1fr_0.9fr]">
-          <div className="flex max-w-3xl flex-col items-center text-center md:items-start md:text-left">
+          <div className="order-2 flex max-w-3xl flex-col items-center text-center md:order-1 md:items-start md:text-left">
             <span className={BADGE}>Available for work</span>
             <h1 className="mt-4 text-balance text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl">
               Syed Mohammad Hussain Naqvi
@@ -233,14 +233,14 @@ export default function HomePage() {
             </div>
           </div>
 
-          <aside className="flex flex-col items-center text-center md:justify-self-end">
+          <aside className="order-1 flex flex-col items-center text-center md:order-2 md:justify-self-end">
             <div className="relative h-[420px] w-[320px]">
               <Image
                 src="/images/profile-image.png"
                 alt="Syed Mohammad Hussain Naqvi"
                 fill
                 sizes="380px"
-                className="object-contain scale-130 -translate-y-2 mask-[linear-gradient(to_top,transparent_0%,black_35%,black_100%)] [-webkit-mask-image:linear-gradient(to_top,transparent_0%,black_35%,black_100%)]"
+                className="object-contain scale-130 -translate-y-8 md:-translate-y-2 mask-[linear-gradient(to_top,transparent_0%,black_35%,black_100%)] [-webkit-mask-image:linear-gradient(to_top,transparent_0%,black_35%,black_100%)]"
               />
             </div>
           </aside>
