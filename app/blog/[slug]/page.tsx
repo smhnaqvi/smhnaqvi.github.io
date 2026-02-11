@@ -7,8 +7,7 @@ import rehypeHighlight from 'rehype-highlight';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import { getPostBySlug, getAllPosts } from '@/lib/posts';
-
-const SITE_URL = 'https://smhnaqvi.github.io';
+import { SITE_URL } from '@/lib/site';
 
 interface Props {
   params: Promise<{ slug: string }>;

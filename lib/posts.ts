@@ -5,7 +5,9 @@ import matter from 'gray-matter';
 const postsDirectory = path.join(process.cwd(), 'content');
 
 export function getAllPosts() {
-  const fileNames = fs.readdirSync(postsDirectory);
+  const fileNames = fs
+    .readdirSync(postsDirectory)
+    .filter((fileName) => fileName.endsWith('.md') && fileName !== 'cv.md');
   return fileNames.map((fileName) => {
     const slug = fileName.replace(/\.md$/, '');
     return { slug };
