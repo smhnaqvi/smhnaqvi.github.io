@@ -1,6 +1,6 @@
 ---
 id: 2
-title: "Building a Community-Driven Lahore Software Houses Directory (Next.js + GitHub Pages)"
+title: "Building a Community-Driven Lahore Software Houses Directory"
 description: "How I turned a simple README table into a public directory website, made it community-friendly with contribution rules, and kept the table as the single source of truth."
 thumbnail: "/images/blog/lahore-software-houses-directory.webp"
 author: "Syed Muhammad Hussain Naqvi"
@@ -10,7 +10,7 @@ category: "Open Source"
 readingTime: "9 min"
 ---
 
-# Building a Community-Driven Lahore Software Houses Directory (Next.js + GitHub Pages)
+# Building a Community-Driven Lahore Software Houses Directory
 
 Finding reliable, up-to-date information about software houses in Lahore is harder than it should be, especially when you're actively job hunting. So I built a curated directory that's easy to browse, easy to contribute to, and transparent about where the data comes from: a single Markdown table in the repo.
 
