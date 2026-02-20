@@ -2,7 +2,7 @@
 id: 2
 title: “Building a Community-Driven Lahore Software Houses Directory (Next.js + GitHub Pages)”
 description: “How I turned a simple README table into a public directory website, made it community-friendly with contribution rules, and kept the table as the single source of truth.”
-thumbnail: “/images/blog/lahore-software-houses-directory.png”
+thumbnail: “/images/blog/lahore-software-houses-directory.webp
 author: “Syed Muhammad Hussain Naqvi”
 publishedAt: “2026-02-20”
 tags: [“Next.js”, “GitHub Pages”, “Open Source”, “Community”, “Pakistan”, “Lahore”]
