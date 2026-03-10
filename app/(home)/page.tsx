@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "@/components/Logo";
 import { SITE_URL } from "@/lib/site";
 
 const CARD =
@@ -134,8 +135,8 @@ export default function HomePage() {
     <main className="min-h-screen">
       <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur dark:border-white/10 dark:bg-black/30">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <Link href="/" className="text-lg font-semibold tracking-tight text-slate-900 dark:text-slate-100">
-            SMHN
+          <Link href="/" aria-label="Go to home" className="inline-flex items-center">
+            <Logo width={36} height={36} priority className="h-9 w-9 dark:invert" />
           </Link>
           <nav className="flex items-center gap-4 text-sm text-slate-600 dark:text-slate-300">
             <a href="#experience" className="hover:text-slate-900 dark:hover:text-slate-100">

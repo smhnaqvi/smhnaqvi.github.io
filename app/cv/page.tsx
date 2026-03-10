@@ -7,6 +7,8 @@ import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import Link from "next/link";
+import Logo from "@/components/Logo";
 import { SITE_URL } from "@/lib/site";
 
 const cvPath = path.join(process.cwd(), "content", "cv.md");
@@ -42,6 +44,25 @@ export const metadata: Metadata = {
 export default function CvPage() {
   return (
     <main className="min-h-screen">
+      <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur dark:border-white/10 dark:bg-black/30">
+        <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+          <Link href="/" aria-label="Go to home" className="inline-flex items-center">
+            <Logo width={36} height={36} className="h-9 w-9 dark:invert" />
+          </Link>
+          <nav className="flex items-center gap-4 text-sm text-slate-600 dark:text-slate-300">
+            <Link href="/" className="hover:text-slate-900 dark:hover:text-slate-100">
+              Home
+            </Link>
+            <Link href="/blog" className="hover:text-slate-900 dark:hover:text-slate-100">
+              Blog
+            </Link>
+            <Link href="/cv" className="hover:text-slate-900 dark:hover:text-slate-100">
+              CV
+            </Link>
+          </nav>
+        </div>
+      </header>
+
       <header className="mx-auto flex max-w-5xl items-center justify-between px-6 pt-12 pb-6">
         <div>
           <p className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700 dark:bg-white/10 dark:text-slate-200">
