@@ -22,12 +22,6 @@ type PostMeta = {
   readingTime?: string;
 };
 
-function toTime(value: unknown): number {
-  if (typeof value !== 'string') return 0;
-  const t = new Date(value).getTime();
-  return Number.isFinite(t) ? t : 0;
-}
-
 export default function BlogIndexPage() {
   const posts = getAllPosts()
     .map(({ slug }) => getPostBySlug(slug))
@@ -35,8 +29,7 @@ export default function BlogIndexPage() {
     .map((post) => ({
       slug: post!.slug,
       metadata: post!.metadata as PostMeta,
-    }))
-    .sort((a, b) => toTime(b.metadata.publishedAt) - toTime(a.metadata.publishedAt));
+    }));
 
   return (
     <main className="min-h-screen">
@@ -91,7 +84,7 @@ export default function BlogIndexPage() {
                 >
                   <div className="relative">
                     {post.metadata.thumbnail ? (
-                      <div className="relative h-44 w-full sm:h-48">
+                      <div className="relative h-[300px] w-full sm:h-[300px]">
                         <Image
                           src={post.metadata.thumbnail}
                           alt={title ? `Thumbnail for ${title}` : 'Blog post thumbnail'}
