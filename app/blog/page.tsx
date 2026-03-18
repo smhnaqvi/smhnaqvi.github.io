@@ -84,7 +84,7 @@ export default function BlogIndexPage() {
                 >
                   <div className="relative">
                     {post.metadata.thumbnail ? (
-                      <div className="relative h-44 w-full sm:h-48">
+                      <div className="relative h-[300px] w-full sm:h-[300px]">
                         <Image
                           src={post.metadata.thumbnail}
                           alt={title ? `Thumbnail for ${title}` : 'Blog post thumbnail'}
